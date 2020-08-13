@@ -15,7 +15,7 @@ const downloadPage = (url='http://nodeprogram.com') => { //Define a default valu
                 buff += chunk;
             })
             response.on('end', () => {
-                callback(null, buff);
+                callback(null, buff); //first argument is null because it's for errors
             })
         }).on('error', (error) => {
             console.error('Got error: ${error.message}');
