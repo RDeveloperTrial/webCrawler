@@ -6,7 +6,7 @@ const uuid = require('uuid');
 /**
  * Function that takes a URL, downloads the HTML and saves it into a newly created file
  */
-const downloadPage = (url='http://nodeprogram.com') => { //Define a default value for URL
+const downloadPage = (url='http://nodeprogram.com') => { //Defines a default value for URL
     console.log('downloading ', url);
     const fetchPage = (urlF, callback) => {
         http.get(urlF, (response) => { //GET method is asynchronous
