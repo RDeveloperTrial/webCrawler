@@ -33,5 +33,4 @@ const downloadPage = (url='http://nodeprogram.com') => { //Define a default valu
     })
 }
 //This is a comment just to try the GIT feature (changes)
-//Second line comment, editing from the right editor
 downloadPage(process.argv[2]);
